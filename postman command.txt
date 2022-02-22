@@ -1,0 +1,8 @@
+GET Request means to get the details of a request
+
+POST Request means to create new data like account creation, customer creation, new facebook account
+
+PUT Request means to replace old with new data like 
+
+
+DELETE Request means delete new or existing user account like orkut , 

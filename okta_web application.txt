@@ -1,0 +1,48 @@
+https://tsworkz8056585191.okta.com
+
+https://tsworkz
+8056585191
+.okta.com
+
+Login: ramakala.ramakrishnan@tsworkz.com
+Org URL: https://tsworkz8056585191.okta.com
+
+
+
+Issuer URL : https://dev-84690996.okta.com/oauth2/default
+
+code verifier : 82c7be81faaa97959dfce0591923a826f1620ef2cd102416908e1034
+
+
+client ID : 0oa3xrt5j0lkjtTjP5d7
+Client secret : NikLxzmsFczwfXKexb7_tqpnD4QthRVVrQlWzYq-
+
+
+
+  https://dev-84690996.okta.com/oauth2/default/v1/authorize?
+  response_type=code&
+  scope={photos device_sso}&
+  client_id={0oa3xrt5j0lkjtTjP5d7}&
+  state={9017190c8f3ed20dc4557481d134a16aca1cf6a3c0328e7caf8e36e7}&
+  redirect_uri=https://example-app.com/redirect&
+  code_challenge={9017190c8f3ed20dc4557481d134a16aca1cf6a3c0328e7caf8e36e7}&
+  code_challenge_method=S256
+
+
+
+  https://dev-84690996.okta.com/oauth2/default/v1/authorize?response_type=code&scope=photos &client_id=0oa3y02agq3w5DSGk5d7&state=1045621d2b832e1d93b770b635b6f4789f3673617cba2960ab9a9d67&redirect_uri=https://example-app.com/redirect&code_challenge=g8-hElDkJQmwxnLzxLzuoNOu85kfJiFlIgq8jzBjyos&code_challenge_method=S256
+
+
+code=
+fTmhI4IH8glpBFiTuFcKKRJkI_tSNNek3bEeBUuAMtQ
+
+state=1045621d2b832e1d93b770b635b6f4789f3673617cba2960ab9a9d67
+
+
+curl -X POST https://dev-84690996.okta.com/oauth2/default/v1/token \
+  -d grant_type=authorization_code \
+  -d redirect_uri=https://example-app.com/redirect \
+  -d client_id=0oa3y02agq3w5DSGk5d7 \
+  -d client_secret=W2FNZqlN8DzH95qCKD-lOIQwu23TaSF3W66uHiUv \
+  -d code_verifier=1045621d2b832e1d93b770b635b6f4789f3673617cba2960ab9a9d67 \
+  -d code=fTmhI4IH8glpBFiTuFcKKRJkI_tSNNek3bEeBUuAMtQ

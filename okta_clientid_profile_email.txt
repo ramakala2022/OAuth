@@ -1,0 +1,18 @@
+https://dev-84690996.okta.com/oauth2/default/v1/authorize?
+  response_type=code&
+  scope=openid+profile+email&
+  client_id=0oa3y0v2o05nqxr8v5d7&
+  state=a4605e40e63fe940bbce22c901d72228e45bcc8bfa706422b121ccdc&
+  redirect_uri=https://example-app.com/redirect&
+  code_challenge=as_S1vujWvdywMyRCza-vxxm_56tC3gWhH5WOoKJOGM&
+  code_challenge_method=S256
+
+
+
+curl -X POST https://dev-84690996.okta.com/oauth2/default/v1/token \
+  -d grant_type=authorization_code \
+  -d redirect_uri=https://example-app.com/redirect \
+  -d client_id=0oa3y0v2o05nqxr8v5d7 \
+  -d client_secret=e8UYx0uNIkWEN-5Ff5jU4ykzPq1-Hk2F7rnEAatW \
+  -d code_verifier=a4605e40e63fe940bbce22c901d72228e45bcc8bfa706422b121ccdc \
+  -d code={YOUR_AUTHORIZATION_CODE}

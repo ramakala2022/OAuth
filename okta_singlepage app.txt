@@ -1,0 +1,17 @@
+https://dev-84690996.okta.com/oauth2/default/v1/authorize?
+  response_type=code&
+  scope=photos&
+  client_id=0oa3y0k61sb0KJOCR5d7&
+  state=fd2383604291cdf01fffb0e80b87c6dac9612b752e5a7fbdbcbfb680&
+  redirect_uri=https://example-app.com/redirect&
+  code_challenge=ewaOc-urTyTMYLJLlIwccrLPdtdTWzPdamSuKZzdlRc&
+  code_challenge_method=S256
+
+
+curl -X POST https://dev-84690996.okta.com/oauth2/default/v1/token \
+  -d grant_type=authorization_code \
+  -d redirect_uri=https://example-app.com/redirect \
+  -d client_id=0oa3y0k61sb0KJOCR5d7 \
+  -d code_verifier=fd2383604291cdf01fffb0e80b87c6dac9612b752e5a7fbdbcbfb680 \
+  -d code=vn506istke_cEm_bbj8ufMpytH9bo2SyNS3LdlupGN8
+
